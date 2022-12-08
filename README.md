@@ -28,6 +28,5 @@ nd implement
 
 - 가짜리뷰 논문 참고
 - 긍부정 감성분석 모델(특정 콘텐츠 정하는 것 필요)
-- 부정.. 만들어야되나요..ㅜ
  
 ![image](https://user-images.githubusercontent.com/119420119/204957481-71d4c4af-c061-45e8-8049-4a03c07fd38c.png)
