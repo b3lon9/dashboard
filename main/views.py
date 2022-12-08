@@ -12,4 +12,8 @@ from login import models
 def index(request):
     # main dashboard page
     # context = {:}
-    return render(request, 'main/index.html')
+    list = []
+    for i in range(10):
+        list.append(i)
+    print(list)
+    return render(request, 'main/index.html', {"list":list})

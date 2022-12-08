@@ -41,7 +41,26 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'login.apps.LoginConfig',
     'community.apps.CommunityConfig',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount', 
+    'allauth.socialaccount.providers.naver',
 ]
+SITE_ID = 1
+# LOGIN_REDIRECT_URL = '/'
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+SOCIALACCOUNT_PROVIDERS = {
+    'naver': {'APP': {
+                        'client_id': 'OHMvkdP7YhMZcLpBInJV',
+                        'secret': '1HmSQuY0hE',
+                        'key': ''
+                }},
+}
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
