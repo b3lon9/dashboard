@@ -16,4 +16,4 @@ def index(request):
     for i in range(10):
         list.append(i)
     print(list)
-    return render(request, 'main/index.html', {"list":list})
+    return render(request, 'main/base.html', {"list":list})
