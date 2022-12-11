@@ -1,0 +1,29 @@
+.test {
+    background-color: royalblue;
+    width:500px;
+    height:500px;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%, -50%);
+}
+
+.dot-wrapper {
+    text-align: center;
+    background-color: #ddd;
+    padding:50px 0;
+}
+.dot {
+    width:100px;
+    height:100px;
+    background-color: orangered;
+    color:white;
+    font-size:3rem;
+    text-align:center;
+    line-height:100px;
+    margin:0 auto;
+    display:inline-block;
+    border-radius: 50%;
+}
