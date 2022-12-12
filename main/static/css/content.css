@@ -1,12 +1,13 @@
 .pcoded-content {
-    position: relative;
+    /* position: relative; */
     display: block;
     padding: 25px;
 }
 
 .card {
-    position: relative;
+    position: absolute;
     display: flex;
+    float:left;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -14,4 +15,18 @@
     background-clip: border-box;
     border: 0 solid rgba(0, 0, 0, 0.125);
     border-radius: 5px;
+}
+.right-box{
+    position: absolute;
+    background: yellowgreen;
+    float:right;
+    width:auto;
+    height:auto;
+}
+.left-box{
+    position: absolute;
+    background: yellowgreen;
+    float:left;
+    width:auto;
+    height:auto;
 }

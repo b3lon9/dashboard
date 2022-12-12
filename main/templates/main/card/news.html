@@ -1,3 +1,10 @@
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+<link rel="stylesheet" href="{% static 'css/content.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <div class="col-lg-8 col-md-12">
     <div class="card">
         <div class="card-header">
@@ -58,4 +65,10 @@
             </ul>
         </div>
     </div>
+    <div id="market_chart" class='right-box' style="height: 370px;  width:100%; "></div>
+    <script type='text/javascript' id='city'>
+    var dict = {{ city_json2 | safe }};
+    </script>
+    <script type="text/javascript" src='{% static "js\bar_chart.js" %}'>
+    </script>
 </div>

@@ -4,20 +4,26 @@
 <html>
     <meta charset="utf-8">
     <head>
+        
         <title>
             10-DashBoard
         </title>
         <link href="{% static 'css/style.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/custom.css' %}">
         <link rel="stylesheet" href="{% static 'css/content.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </head>
 
     <body>
         {% include 'main/header.html' %}
 
         <div class="pcoded-content">
-            <div style="display: flex; flex-wrap: wrap;">
+            <div style="display: flex; ">
                 {% include 'main/card/news.html' %}
+            </div>
+
         </div>
         
         {% block content %}
